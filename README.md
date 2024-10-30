@@ -1,63 +1,35 @@
-# Projeto Weflying
+# Weflying
 
-Este é o site da **Weflying**, uma plataforma que combina tecnologia e marketing digital para transformar a presença online dos nossos clientes. O site apresenta nosso portfólio, avaliações de clientes e links para redes sociais, com foco em experiência visual e responsividade.
-
-## Índice
-
-- [Visão Geral](#visão-geral)
-- [Recursos](#recursos)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Estrutura do Código](#estrutura-do-código)
-- [Como Executar](#como-executar)
-- [Licença](#licença)
-
-## Visão Geral
-
-Este projeto foi desenvolvido para a **Weflying** e exibe informações institucionais, incluindo:
-- Portfólio de trabalhos realizados.
-- Avaliações de clientes.
-- Links diretos para redes sociais.
-
-O design é centrado na estética e na usabilidade, usando cores vibrantes e animações suaves para criar uma experiência visual dinâmica e envolvente.
+Este é o site da **Weflying**, uma plataforma que integra tecnologia e marketing digital para potencializar a presença online dos nossos clientes. O site apresenta nosso portfólio, avaliações de clientes e links para redes sociais, com foco em uma experiência visual rica e responsiva.
 
 ## Recursos
 
-- **Cabeçalho Fixo**: Um cabeçalho que permanece no topo enquanto o usuário rola a página.
-- **Seção de Portfólio**: Mostra alguns dos trabalhos realizados, com animações de entrada.
-- **Avaliações**: Avaliações com estrelas para destacar feedback de clientes.
-- **Redes Sociais**: Links diretos para as redes sociais da empresa, com animações e efeitos de hover.
-- **Responsividade**: Ajusta-se automaticamente a diferentes tamanhos de tela.
+- **Cabeçalho Fixo**: Um cabeçalho que permanece visível enquanto o usuário navega.
+- **Portfólio**: Mostra alguns dos nossos projetos com animações suaves.
+- **Avaliações**: Feedback dos clientes com um sistema de estrelas.
+- **Redes Sociais**: Links diretos para as redes sociais da empresa.
+- **Responsividade**: Layout adaptável a diferentes tamanhos de tela.
 
 ## Tecnologias Utilizadas
 
-- **HTML5** e **CSS3**: Estrutura e estilização da página.
-- **TailwindCSS**: Estilos customizados com classes utilitárias.
-- **JavaScript/jQuery**: Funcionalidades dinâmicas e manipulação de DOM.
-- **GSAP (GreenSock Animation Platform)**: Animações avançadas para elementos de texto e imagens.
-- **AOS (Animate On Scroll)**: Animações suaves ao rolar a página.
-- **Phosphor Icons**: Ícones visuais modernos e flexíveis.
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=flat)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=flat)
+![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?logo=tailwindcss&logoColor=white&style=flat)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat)
+![jQuery](https://img.shields.io/badge/-jQuery-0769AD?logo=jquery&logoColor=white&style=flat)
+![GSAP](https://img.shields.io/badge/-GSAP-88CE02?logo=greensock&logoColor=black&style=flat)
+![AOS](https://img.shields.io/badge/-AOS-000000?logo=loading&logoColor=white&style=flat)
+![Phosphor Icons](https://img.shields.io/badge/-Phosphor%20Icons-4E4E4E?logo=phosphor-icons&logoColor=white&style=flat)
 
+## Estrutura do Código
 
-### Estrutura HTML
+- **index.html**: Estrutura principal do site.
+- **src/**: Pasta com imagens, scripts e arquivos CSS.
 
-- O arquivo **index.html** contém toda a estrutura do site.
-- Dividido em seções como:
-  - **Cabeçalho**: Menu de navegação com links para diferentes seções do site.
-  - **Portfólio**: Exibe imagens dos projetos.
-  - **Avaliações**: Exibe feedback dos clientes em forma de cartões.
-  - **Redes Sociais**: Links para redes sociais com animações de hover.
+## Visualização
 
-### Animações
+Para visualizar o projeto, basta abrir o arquivo `index.html` em um navegador.
 
-- **GSAP**: Usado para animações complexas, como efeitos de entrada e saída em texto e imagens.
-- **AOS**: Permite animações ao rolar a página, com efeitos como fade e delay configuráveis.
+## Licença
 
-## Como Executar
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/seuusuario/nome-do-repositorio.git
-
-
-Esse README oferece uma visão geral das funcionalidades e tecnologias utilizadas, incluindo instruções para execução local do projeto e a estrutura dos arquivos. Sinta-se à vontade para adaptá-lo conforme necessário!
-
+Este projeto é protegido por direitos autorais da **Weflying**. Todos os direitos são reservados.
