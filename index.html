@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="flex flex-col overflow-x-hidden scroll-smooth scroll-p-[150px]" lang="en">
+<html class="flex flex-col overflow-x-hidden scroll-smooth" lang="ptbr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,8 +32,19 @@
         html.w-editor [text-split] {
             opacity: 1;
         }
-
     </style>
+    <style>
+        /* Defina o overflow-x como hidden para html e body */
+        html, body {
+            overflow-x: hidden;
+        }
+
+        /* Defina o header para usar a largura da viewport */
+        header {
+            width: 100vw;
+        }
+    </style>
+
 </head>
 <body class="bg-cream text-dark-green">
 <!-- Cabeçalho -->
@@ -42,24 +53,25 @@
     <nav class="flex justify-center items-center py-2 px-10 m-auto w-full max-w-screen-2xl">
         <div class="flex grow lg:grow-0 items-center sm:justify-normal justify-center ">
             <div class="w-10 h-10 rounded-full flex justify-center items-center bg-yellow">
-                <img class="p-2" src="src/imgs/logo/weflying_logo.png"/></div>
+                <img class="p-2" src="src/imgs/logo/weflying_logo.png" />
+            </div>
             <span class="ml-2 font-bold text-xl">Weflying</span>
         </div>
-        <div class="hidden lg:flex justify-center items-center w-1/2 m-auto font-semibold ">
-            <a href="#" class="hover:underline w-full text-center">Home</a>
-            <a href="#" class="hover:underline w-full text-center">Sobre nós</a>
-            <a href="#" class="hover:underline w-full text-center">Portfólio</a>
-            <a href="#" class="hover:underline w-full text-center">Avaliações</a>
-            <a href="#" class="hover:underline w-full text-center">Redes Sociais</a>
+        <div class="hidden lg:flex justify-center items-center w-1/2 m-auto font-semibold space-x-6">
+            <a href="#home" class="hover:-translate-y-1 hover:border-b-2 hover:border-b-yellow hover:font-bold hover:scale-110 hover:text-yellow-500 transition ease-in-out inline-block text-center">Home</a>
+            <a href="#sobre-nos" class="hover:-translate-y-1 hover:border-b-2 hover:border-b-yellow hover:font-bold hover:scale-110 hover:text-yellow-500 transition ease-in-out inline-block text-center">Sobre nós</a>
+            <a href="#portfolio" class="hover:-translate-y-1 hover:border-b-2 hover:border-b-yellow hover:font-bold hover:scale-110 hover:text-yellow-500 transition ease-in-out inline-block text-center">Portfólio</a>
+            <a href="#avaliacoes" class="hover:-translate-y-1 hover:border-b-2 hover:border-b-yellow hover:font-bold hover:scale-110 hover:text-yellow-500 transition ease-in-out inline-block text-center">Avaliações</a>
+            <a href="#redes-sociais" class="hover:-translate-y-1 hover:border-b-2 hover:border-b-yellow hover:font-bold hover:scale-110 hover:text-yellow-500 transition ease-in-out inline-block text-center">Redes Sociais</a>
         </div>
-        <div class="flex items-center">
-            <a href="#"
-               class="bg-yellow sm:flex hidden text-dark-green font-bold pl-3 px-1 py-1 rounded-full flex items-center border border-dark-green hover:bg-yellow-500 transition italic">
-                PRONTO PRA VOAR
 
+
+        <div class="flex items-center">
+            <a href="#portfolio" class="bg-yellow sm:flex hidden text-dark-green font-bold pl-3 px-1 py-1 rounded-full flex items-center border border-dark-green hover:bg-yellow-500 transition italic">
+                PRONTO PRA VOAR
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                      stroke="currentColor" class="ml-2 w-8 h-8 p-1.5 text-white bg-black rounded-full -rotate-45">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
             </a>
         </div>
@@ -67,8 +79,9 @@
 </header>
 
 
+
 <main class="flex flex-col w-full h-full">
-    <section id="conheca" class="relative w-full mx-auto mt-20">
+    <section id="home" class="relative w-full mx-auto mt-20">
         <!-- Seção branca no topo -->
         <div class="flex max-w-screen-2xl mx-auto">
             <div class="flex w-full">
@@ -78,10 +91,10 @@
                         <h1 class="text-4xl sm:text-5xl font-bold" text-split="" letters-slide-up=""
                             data-gsap-delay="1">CONHEÇA O NOSSO TRABALHO!</h1>
 
-                        <div class="flex flex-col shadow-lg max-w-[400px] mx-auto border border-6 border-dark-green lg:hidden flex">
+                        <div class="flex flex-col shadow-lg max-w-[400px] mx-auto border border-6 border-dark-green lg:hidden flex" data-aos="fade-up">
                             <div>
                                 <div class="border-b border-b-6 border-dark-green bg-yellow flex items-center">
-                                    <a href="#"
+                                    <a href="#portfolio"
                                        class="flex items-center bg-yellow text-2xl text-dark-green font-bold px-1 rounded-full w-full hover:bg-yellow-500 transition">
                                         <span class="flex-1 text-center" >Portfólio</span>
 
@@ -133,7 +146,7 @@
                             Veja aqui alguns dos nossos trabalhos e avalie as transformações e realizações que nossos
                             clientes tiveram ao longo da nossa trajetória juntos!
                         </p>
-                        <a href="#" data-aos="fade-right"
+                        <a href="#portfolio" data-aos="fade-right"
                            class="relative mx-auto bg-yellow text-2xl text-dark-green font-bold px-8 py-2 rounded-full flex items-center justify-center w-full border-2 border-white hover:bg-yellow-500 transition">
                             Portfólio
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
@@ -154,7 +167,7 @@
     </section>
 
 
-    <section class="w-full text-dark-green py-20">
+    <section id="sobre-nos" class="w-full text-dark-green py-20">
         <div class="flex lg:flex-row flex-col gap-10 h-full w-full mx-auto max-w-screen-2xl px-10 py-20">
             <div class=" lg:w-1/2 w-full mx-auto">
                 <h2 class="flex justify-center w-full mx-auto items-center gap-2 text-4xl sm:text-5xl font-bold mb-8"
@@ -191,7 +204,7 @@
 
     </section>
 
-    <section class="w-full text-dark-green pt-10 pb-20">
+    <section id="portfolio" class="w-full text-dark-green pt-10 pb-20">
         <div class="flex flex-col gap-20 h-full w-full mx-auto max-w-screen-2xl px-10 py-20">
             <h2 class="text-4xl sm:text-6xl font-bold mb-8 text-center" data-aos="fade-down">PORTFÓLIO</h2>
             <div class="flex flex-row flex-wrap justify-center items-center w-full gap-28">
@@ -246,7 +259,7 @@
     </section>
 
 
-    <section class="w-full text-dark-green py-20">
+    <section id="avaliacoes" class="w-full text-dark-green py-20">
         <div class="flex flex-col gap-20 h-full w-full mx-auto max-w-screen-2xl px-10 py-20">
             <h2 class="text-4xl sm:text-6xl font-bold mb-8 text-center" data-aos="fade-up">AVALIAÇÕES</h2>
 
@@ -367,7 +380,7 @@
         </div>
     </section>
 
-    <section class="flex w-full text-dark-green py-20" data-aos="fade-up">
+    <section id="redes-sociais" class="flex w-full text-dark-green py-20" data-aos="fade-up">
         <div class="flex lg:flex-row flex-col gap-10 h-full w-full justify-around items-center mx-auto max-w-screen-2xl px-10 py-20">
             <div class="flex flex-col gap-5 items-center ">
                 <h2 class="text-4xl sm:text-6xl font-bold mb-8 text-center" data-aos="fade-up">REDES SOCIAIS</h2>
@@ -424,6 +437,66 @@
         </div>
         </div>
     </section>
+    <section id="contato" class="w-full text-dark-green py-20 bg-cream">
+        <div class="flex flex-col gap-10 h-full w-full mx-auto max-w-screen-2xl px-10">
+            <h2 class="text-4xl sm:text-6xl font-bold mb-8 text-center" data-aos="fade-up">Entre em Contato</h2>
+            <p class="text-lg text-center mb-10" data-aos="fade-up" data-aos-delay="200">
+                Está interessado em nossos serviços de marketing? Preencha o formulário abaixo e entraremos em contato!
+            </p>
+            <form class="flex flex-col gap-6 max-w-xl mx-auto bg-white shadow-lg p-8 rounded-lg border border-dark-green" data-aos="fade-up" data-aos-delay="300">
+                <label class="flex flex-col gap-2">
+                    <span class="text-lg font-semibold">Nome</span>
+                    <input type="text" class="p-3 border border-dark-green rounded-md focus:outline-none focus:ring-2 focus:ring-yellow" placeholder="Seu nome completo" required>
+                </label>
+                <label class="flex flex-col gap-2">
+                    <span class="text-lg font-semibold">E-mail</span>
+                    <input type="email" class="p-3 border border-dark-green rounded-md focus:outline-none focus:ring-2 focus:ring-yellow" placeholder="Seu e-mail" required>
+                </label>
+                <label class="flex flex-col gap-2">
+                    <span class="text-lg font-semibold">Telefone</span>
+                    <input type="tel" class="p-3 border border-dark-green rounded-md focus:outline-none focus:ring-2 focus:ring-yellow" placeholder="(XX) XXXX-XXXX" required>
+                </label>
+                <label class="flex flex-col gap-2">
+                    <span class="text-lg font-semibold">Mensagem</span>
+                    <textarea class="p-3 border border-dark-green rounded-md focus:outline-none focus:ring-2 focus:ring-yellow" placeholder="Conte-nos sobre seu projeto ou dúvidas" rows="4" required></textarea>
+                </label>
+                <button type="submit" class="bg-yellow text-dark-green font-bold py-3 rounded-full hover:bg-yellow-500 transition" data-aos="fade-up" data-aos-delay="400">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Seção de Formulário de Contato -->
+    <section id="contato" class="w-full text-dark-green py-20 bg-cream">
+        <div class="flex flex-col gap-10 h-full w-full mx-auto max-w-screen-2xl px-10">
+            <h2 class="text-4xl sm:text-6xl font-bold mb-8 text-center" data-aos="fade-up">Entre em Contato</h2>
+            <p class="text-lg text-center mb-10" data-aos="fade-up" data-aos-delay="200">
+                Está interessado em nossos serviços de marketing? Preencha o formulário abaixo e entraremos em contato!
+            </p>
+            <form class="flex flex-col gap-6 max-w-xl mx-auto bg-white shadow-lg p-8 rounded-lg border border-dark-green" data-aos="fade-up" data-aos-delay="300">
+                <label class="flex flex-col gap-2">
+                    <span class="text-lg font-semibold">Nome</span>
+                    <input type="text" class="p-3 border border-dark-green rounded-md focus:outline-none focus:ring-2 focus:ring-yellow" placeholder="Seu nome completo" required>
+                </label>
+                <label class="flex flex-col gap-2">
+                    <span class="text-lg font-semibold">E-mail</span>
+                    <input type="email" class="p-3 border border-dark-green rounded-md focus:outline-none focus:ring-2 focus:ring-yellow" placeholder="Seu e-mail" required>
+                </label>
+                <label class="flex flex-col gap-2">
+                    <span class="text-lg font-semibold">Telefone</span>
+                    <input type="tel" class="p-3 border border-dark-green rounded-md focus:outline-none focus:ring-2 focus:ring-yellow" placeholder="(XX) XXXX-XXXX" required>
+                </label>
+                <label class="flex flex-col gap-2">
+                    <span class="text-lg font-semibold">Mensagem</span>
+                    <textarea class="p-3 border border-dark-green rounded-md focus:outline-none focus:ring-2 focus:ring-yellow" placeholder="Conte-nos sobre seu projeto ou dúvidas" rows="4" required></textarea>
+                </label>
+                <button type="submit" class="bg-yellow text-dark-green font-bold py-3 rounded-full hover:bg-yellow-500 transition" data-aos="fade-up" data-aos-delay="400">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </section>
 
     <!-- Footer -->
     <!-- Footer -->
@@ -442,11 +515,12 @@
                 <!-- Links Rápidos -->
                 <div class="flex flex-col gap-4 lg:w-1/3">
                     <h3 class="text-xl font-semibold mb-3" data-aos="fade-down" data-aos-delay="100">Links Rápidos</h3>
-                    <a href="#" class="text-gray-400 hover:text-yellow" data-aos="fade-down" data-aos-delay="200">Home</a>
-                    <a href="#" class="text-gray-400 hover:text-yellow" data-aos="fade-down" data-aos-delay="300">Sobre Nós</a>
-                    <a href="#" class="text-gray-400 hover:text-yellow" data-aos="fade-down" data-aos-delay="400">Portfólio</a>
-                    <a href="#" class="text-gray-400 hover:text-yellow" data-aos="fade-down" data-aos-delay="500">Avaliações</a>
+                    <a href="#home" class="text-gray-400 hover:text-yellow" data-aos="fade-down" data-aos-delay="200">Home</a>
+                    <a href="#sobre-nos" class="text-gray-400 hover:text-yellow" data-aos="fade-down" data-aos-delay="300">Sobre Nós</a>
+                    <a href="#portfolio" class="text-gray-400 hover:text-yellow" data-aos="fade-down" data-aos-delay="400">Portfólio</a>
+                    <a href="#avaliacoes" class="text-gray-400 hover:text-yellow" data-aos="fade-down" data-aos-delay="500">Avaliações</a>
                 </div>
+
 
                 <!-- Redes Sociais -->
                 <div class="flex flex-col gap-4 lg:w-1/3">
@@ -487,9 +561,11 @@
         duration: 500, // Duração padrão para todas as animações
         easing: 'ease-out-cubic', // Efeito de animação
         startEvent: 'DOMContentLoaded', // Faz com que a animação comece quando a página for carregada
-        once: true, // A animação acontece apenas uma vez e não se repete
+        once: false, // A animação acontece apenas uma vez e não se repete
         offset: 0, // Reduz o gatilho de início da animação para que ela ocorra assim que o elemento aparecer
     });
 </script>
+
+
 </body>
 </html>
